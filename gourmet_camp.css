@@ -1,0 +1,290 @@
+.body {
+    min-width: 1200px;
+    font-family: “游ゴシック“, YuGothic, "“ヒラギノ角ゴ Pro W3”", "“Hiragino Kaku Gothic Pro”", “メイリオ“, Meiryo, "“ＭＳ Ｐゴシック“", "“MS PGothic”", sans-serif;
+}
+
+.header {
+    background-image: url(../images/top.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 320px;
+}
+.header_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_container {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.list_container ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.header_menu li{
+   color: white;
+}
+.header_menu li+li{
+    margin-left: 30px;
+}
+
+.header_image {
+    display: flex;
+    justify-content: center;
+}
+.search {/*テキストボックス内の文字を小さくできない、ボックス内の背景色が白にならない*/
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.8;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 40px;
+    padding: 10px 0px;
+    font-weight: bold;
+    
+}
+input[type="text"] {
+  background-color: white;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  font-size: 80%;
+  width: 150px;
+  font-weight: normal;
+}
+input[type="submit"] {
+  text-align: center;
+  padding: 2px 20px;
+  border-width: 2px;
+  border-style: outset;
+  background-color: red;
+  color: white;
+  background-image:url("../images/icon07.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 60px;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_contents {
+    width: 800px;
+    background-color: white;
+    margin: 20px 50px 0px 40px;
+}
+.contents {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.contents_body {
+    margin-left: 10px;
+    width: 100%;
+}
+.contents_title { /*<h2></h2>のフォントサイズが反映されていない…*/
+    border-bottom: solid 3px red;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.area_list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 80%;
+}
+.area_list a {
+    padding: 10px 0px;
+    width: 50px;
+    display: flex;
+    color: black;
+    border: 1px solid #80808052;
+    margin: 10px 10px 0px 0px;
+    justify-content: center;
+}
+.hot_spot_container { 
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.hot_spot_container li::before {
+    content: ">";
+    color: orange;
+}
+.hot_spot_container a {
+    margin: 10px 10px;
+    padding: 0px 10px;
+}
+
+.figure_container {
+    display: flex;
+    justify-content: space-between;
+}
+figure {
+    border: 1px solid #80808052;
+}
+figcaption {
+    color : black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+.preference_container {
+    flex-wrap: wrap;
+    display: flex;
+}
+.preference_container a {
+    border: 1px solid #80808052;
+    padding: 0px 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.content_description {
+    border-bottom: solid 3px red;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.recommendation_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.writer_recommendation_container {
+    display: flex;
+}
+.writer_recommendation {
+    border: none;
+}
+.recommendation:first-child {
+    margin-right: 20px;
+}
+.recommendation {
+    border: solid 1px #80808052;
+    padding: 10px;
+    background-color: #dcdcdc;
+}
+.user_review_container {
+    display: flex;
+}
+.user_review:first-child {
+    margin-right: 20px;
+}
+.user_review {
+    border: solid 1px #80808052;
+    flex: 1; /*幅を１：１で配置する、等幅にする*/
+    padding: 10px;
+    background-color: #dcdcdc;
+}
+.user {
+    border-bottom: solid 2px #80808052;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+}
+.user_personal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.image {
+    margin-right: 10px;
+}
+h4 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.comment2 {
+    margin-bottom: 20px;
+}
+.menu_images { /*写真が幅に合わせて大きくならない…*/
+    display: flex;
+    justify-content: center;
+}
+.right_bar {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-right: 40px;
+}
+.user_info_container {
+    display: flex;
+    border: solid 20px #fcf2e759;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.user_info1 {
+    display: flex;
+    border-bottom: solid 2px #80808052;
+    margin: 10px 10px;
+    align-items: center;
+}
+.user_info2 {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px #80808052;
+    margin: 10px 0px;
+}
+.p {
+   margin: 10px 50px 10px 10px; 
+}
+.user_info3 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+aside .img {
+    margin: 20px 0px 0px 0px;
+}
+
+.footer_content {
+    background-color: white;
+    margin: 40px 0px;
+}
+
+.footer {
+    margin: 40px 0px;
+    border-top: 2px solid #80808033;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.footer li {
+    text-align: center;
+    margin: 0px 40px;
+}
+.copyright {
+    text-align: center;
+    margin: 20px 0px;
+    background-color: #dcd5d5;
+    padding: 20px;
+}
+
